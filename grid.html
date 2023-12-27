@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            background-color: wheat;
+            height: 500px;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .logo{
+            background-color: cadetblue;
+            text-align: center;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .link{
+            background-color: violet;
+            text-align: center;
+            color: white;
+            grid-column-start: 3;
+            grid-column-end: 11;
+        }
+        .data{
+            background-color: tomato;
+            text-align: center;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 11;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(10 1fr);
+            grid-template-rows: repeat(10 1fr);
+
+        }
+
+        .header{
+            background-color: darkgoldenrod;
+            text-align: center;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 11;
+            height: 50px;
+        }
+        .sidebar{
+            background-color: yellowgreen;
+            text-align:center;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 9;
+        }
+        .content-1{
+            background-color:crimson;
+            text-align: center;
+            color: white;
+            grid-column-start: 3;
+            grid-column-end: 11;
+            height: 100px;
+        }
+        .content-2{
+            background-color: teal;
+            text-align: center;
+            color: white;
+            grid-column-start: 3;
+            grid-column-end: 7;
+            height: 200px;
+        }
+        .content-3{
+            background-color: thistle;
+            text-align: center;
+            color: white;
+            grid-column-start: 7;
+            grid-column-end: 11;
+            height: 200px;
+        }
+        .footer{
+            background-color:orange;
+            text-align: center;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 11;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="grid">
+            <div class="logo">
+                <h1>logo</h1>
+            </div>
+            <div class="link">
+                <h2>link</h2>
+            </div>
+            <div class="data">
+                <h3>data</h3>
+            </div>
+            <div class="header">
+                <b>header</b>
+            </div>
+            <div class="sidebar">
+                <b>sidebar</b>
+            </div>
+            <div class="content-1">
+                <b>content-1</b>
+            </div>
+            <div class="content-2">
+                <b>content-2</b>
+            </div>
+            <div class="content-3">
+                <b>content-3</b>
+            </div>
+            <div class="footer">
+                <b>footer</b>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
